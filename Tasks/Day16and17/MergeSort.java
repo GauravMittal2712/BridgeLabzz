@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class MergeSort {
+public class MergeSort {
+    public static void main(String[] args) {
+        
+    }
 }
