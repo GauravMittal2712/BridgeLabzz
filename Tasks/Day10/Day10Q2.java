@@ -26,7 +26,7 @@ class Contact {
 
 // AddressBook Class (UC2–UC5)
 class AddressBook {
-    ArrayList<Contact> contacts = new ArrayList<>();
+    ArrayList<Contact11> contacts = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
     // Add Contact (UC2)
@@ -48,26 +48,26 @@ class AddressBook {
         System.out.println("Enter Email:");
         String email = sc.next();
 
-        contacts.add(new Contact(first, last, address, city, state, zip, phone, email));
+        contacts.add(new Contact11(first, last, address, city, state, zip, phone, email));
         System.out.println("Contact Added!");
     }
 
     // Display Contacts
     public void displayContacts() {
-        for (Contact c : contacts) {
+        for (Contact11 c : contacts) {
             c.display();
         }
     }
 
     // Edit Contact (UC3)
     public void editContact(String name) {
-        for (Contact c : contacts) {
+        for (Contact11 c : contacts) {
             if (c.firstName.equals(name)) {
                 System.out.println("Editing Contact...");
                 System.out.println("Enter New City:");
                 c.city = sc.next();
                 System.out.println("Enter New Phone:");
-                c.phone = sc.nextLong();
+                c.phoneNumber = sc.nextLong();
                 return;
             }
         }
